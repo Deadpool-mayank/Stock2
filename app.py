@@ -173,10 +173,10 @@ def insertintotable():
         #For X_train=np.reshape(no. of rows/samples, timesteps, no. of cols/features)
         
         #Building RNN
-        from keras.models import Sequential
-        from keras.layers import Dense
-        from keras.layers import Dropout
-        from keras.layers import LSTM
+        from tensorflow.keras.models import Sequential
+        from tensorflow.keras.layers import Dense
+        from tensorflow.keras.layers import Dropout
+        from tensorflow.keras.layers import LSTM
         
         #Initialise RNN
         regressor=Sequential()
@@ -368,7 +368,7 @@ def insertintotable():
                                low_s=today_stock['Low'].to_string(index=False),vol=today_stock['Volume'].to_string(index=False),
                                forecast_set=forecast_set,error_lr=round(error_lr,2),error_lstm=round(error_lstm,2),error_arima=round(error_arima,2))
 if __name__ == '__main__':
-   app.run()
+   app.run(debug=true,port=5000)
    
 
 
