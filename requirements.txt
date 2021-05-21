@@ -1,7 +1,6 @@
   
 tensorflow-cpu
 gunicorn
-flask-talisman
 nltk
 streamlit==0.52.1
 seaborn==0.11.1
